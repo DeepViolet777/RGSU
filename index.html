@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+        <a class="logo-link">
+            <img class="logo-img" src="img/Logo.svg" alt="Портал НПР РГСУ" width="241px" height="44px">
+        </a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">Преподаватели</a>
+                </li>
+                <li>
+                    <a href="#">Вакансии</a>
+                </li>
+                <li>
+                    <a href="#">Объявления</a>
+                </li>
+                <li>
+                    <a href="#">Мероприятия</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="login_btn">Вход на сайт</a>
+        </div>
+    </header>
+
+<main class="main-content">
+  <div class="forms">
+
+  <div class="auth-block">
+    <input type="radio" id="auth" name="tab-group" checked>
+    <label for="auth" class="auth-title">Авторизация</label> 
+
+    <form class="auth-form" action="POST">
+      <p class="email">
+      <span class="email-text">Ваш email</span>
+      <br>
+      <input class="email-user" required type="email" name="email" placeholder="Укажите адрес электронной почты">
+       </p>
+
+       <p class="password">
+       <span class="pass-text">Введите пароль</span>
+       <br>
+       <input class="user-pass" type="password" name="password" id="pass" placeholder="*****" required>
+       </p>
+       <input type="submit" value="Добавить запись" class="sub-btn">
+       <a href="#" class="pass-recovery">Забыли пароль?</a>
+    </form>
+  </div>
+  
+  <div class="reg-block">
+    <input type="radio" id="reg" name="tab-group">
+    <label for="reg" class="reg-title">Регистрация</label> 
+
+    <form class="reg-form" action="POST">
+      <p class="name">
+        <span class="name-text">ФИО</span>
+        <input type="text" name="username" id="username" class="name-user" placeholder="Фамилия Имя Отчество" required>
+      </p>
+      <div class="wrapper">
+      <p class="email">
+      <span class="email-text">Ваш email</span>
+      <br>
+      <input class="email-user" required type="email" name="email" placeholder="Адрес будет логином на портале">
+       </p>
+
+       <p class="telephone">
+       <span class="tel-text">Телефон</span>
+       <br>
+       <input type="tel" name="telephone" class="tel-user" id="tel" placeholder="+7(___)___-__-__" required>
+       </p>
+       </div>
+
+       <div class="wrapper">
+           <p class="insurance">
+               <span class="ins-text">СНИЛС</span>
+               <input type="text" name="insurance" id="snils" placeholder="___-___-__" required pattern="[0-9]{11}">
+           </p>
+
+           <p class="bday">
+            <span class="bday-text">Дата рождения</span>
+            <br>
+            <input type="date" name="bday" id="bday" required placeholder="__.__.____" pattern="" >
+            </p>
+
+
+
+       <input type="submit" value="Зарегистрироваться" class="sub-btn">
+       <a href="#" class="cancel_btn">Отказаться</a>
+    </form>
+  </div>
+
+ 
+  </div>
+</main>
+
+
+
+
+
+</body>
+</html>
