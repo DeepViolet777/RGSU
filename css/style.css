@@ -106,35 +106,37 @@ left: 28px;
 
 .main-content{
   margin: 0 auto;
-  position: relative;
   max-width: 890px;
-  border: 2px solid red;
+ /*border: 2px solid red;*/
 }
 
+.forms-nav__wrapper{
+  position: relative;
+  margin: 101px auto 0;
+ /* border: 2px solid green;*/
+  z-index: 5;
+  width: 334px;
+  height: 30px;
+}
 .forms-nav{
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+ /* border: 2px solid red;*/
+  position: absolute;
+  top: 50px;
   width: 334px;
-  background-color: #FFFFFF;
-  margin: 211px auto 0;
-
 }
 
 .forms{
 position: relative;
 
 }
-/*
-.form{
-  display: none;
-}*/
 
 .auth-block{
   width: 490px;
   height:408px;
   background-color: #FFFFFF;
-  /*margin: 172px auto 140px;*/
+  margin: 172px auto 140px;
   margin: 0 auto;
   border-radius: 4px;
   z-index: 2;
@@ -155,8 +157,13 @@ z-index: -1;
 
 .auth-form{
 margin-left: 70px;
+padding-top: 106px;
 }
 
+.reg-form{
+  margin-left: 34px;
+  padding-top: 94px;
+}
 
 input::-moz-placeholder{
   color: #C3CAD6;
@@ -205,7 +212,7 @@ width: 890px;
 height: 560px;
 background-color: #FFFFFF;
 border-radius: 4px;
-margin: 0 auto;
+margin: 0 auto 0;
 position: relative;
 z-index: 2;
 }
@@ -264,10 +271,10 @@ input[type="password"]{
 display: none;
 }
 
-.content-block .active{
+.active-block{
   display: block;
 }
-
+/*
 .faded{
   opacity: 0;
   transition: all .2s;
@@ -276,9 +283,9 @@ display: none;
 .faded .in{
   opacity: 1;
   transition: all .2s;
-}
+}*/
 
 
-.form-title .active{
+.active-title{
   color: #3464E0;
 }

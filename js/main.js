@@ -14,9 +14,28 @@ $(document).ready(function(){
 
 $(".form-title").on('click', function(e){
         e.preventDefault();
-let href = $(this).attr("href");
-let block = $(".content-block [#]")
+        
+    $(".form-title").removeClass("active-title");
+    $(".content-block").removeClass("active-block");
 
+    $(this).addClass("active-title");
+    let href = $(this).attr("href");
+    console.log(href);
+    $(href).addClass("active-block");
+
+//let href = $(this).attr("href");
+//let block = $(".content-block[data-tab='+href+']");
+//console.log(block);
+
+    //       tab = $('.js-tab-content[data-tab="'+tabName+'"]');
+       
+    //    $('.js-tab-trigger.active').removeClass('active');
+    //    $(this).addClass('active');
+       
+       
+    //    $('.js-tab-content.active').removeClass('active');
+    //    tab.addClass('active');
+    // });
 });
 
 
