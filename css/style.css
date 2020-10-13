@@ -274,16 +274,16 @@ display: none;
 .active-block{
   display: block;
 }
-/*
+
 .faded{
   opacity: 0;
-  transition: all .2s;
+  transition: ease-in 2s;
 }
 
 .faded .in{
   opacity: 1;
-  transition: all .2s;
-}*/
+  transition: ease-in 2s;
+}
 
 
 .active-title{

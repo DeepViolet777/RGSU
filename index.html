@@ -40,14 +40,14 @@
 
 <main class="main-content">
 <div class="forms-nav__wrapper">
- <div class="forms-nav">
-    <a href="#auth" class="form-title active-title">Авторизация</a>
-    <a href="#reg" class="form-title">Регистрация</a>
+ <div class="forms-nav" id="tabs">
+    <a href="#auth" class="form-title active-title auth">Авторизация</a>
+    <a href="#reg" class="form-title reg">Регистрация</a>
  </div>
 </div>
   <div class="forms">
 
-  <div class="auth-block content-block active-block faded in" id="auth">
+  <div class="auth-block auth content-block active-block" id="auth">
     
     <form class="auth-form" action="POST">
       <p class="email">
@@ -66,7 +66,7 @@
     </form>
   </div>
   
-  <div class="reg-block content-block faded" id="reg">
+  <div class="reg-block content-block reg" id="reg">
     
     <form class="reg-form" action="POST">
       <p class="name">

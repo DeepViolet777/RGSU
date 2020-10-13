@@ -1,27 +1,53 @@
 $(document).ready(function(){
-   /*$(".form-title").on('click',(function(e){
+  /* $(".form-title").on('click',(function(e){
         e.preventDefault();
-        $(".form-title").removeClass("active");
-        $(this).addClass("active");
-        let href = $(this).attr("href");
-        $(".content-block").removeClass("active").removeClass("in");
-        $(href).addClass("active");
-        setTimeout(() => {
+        $(".form-title").removeClass("active-title");
+        $(this).addClass("active-title");
+    
+
+        $(".content-block").removeClass("active-block").removeClass("in");
+        $(href).addClass("active-block");
+        
+        /*setTimeout(() => {
             $(href).addClass("in")
-        }, 200);
+        }, 1000);
         return false;
-    });*/
+   }));*/
 
 $(".form-title").on('click', function(e){
         e.preventDefault();
-        
+     
     $(".form-title").removeClass("active-title");
-    $(".content-block").removeClass("active-block");
+    $(".content-block").hide(300, function(){
+        $(".content-block").removeClass("active-block");
+    });
 
     $(this).addClass("active-title");
-    let href = $(this).attr("href");
-    console.log(href);
-    $(href).addClass("active-block");
+    let href = this.hash
+
+    $($(this.hash)).show(300, function(){
+        $(href).addClass("active-block");
+      });
+
+    
+
+    });
+
+/*
+
+$(".form-title").on('click', function(e){
+    e.preventDefault();
+ 
+$(".form-title").removeClass("active-title");
+$(".content-block").removeClass("active-block");
+
+$(this).addClass("active-title");
+let href = $(this).attr("href");
+$(href).addClass("active-block");
+
+
+
+});*/
 
 //let href = $(this).attr("href");
 //let block = $(".content-block[data-tab='+href+']");
@@ -36,7 +62,7 @@ $(".form-title").on('click', function(e){
     //    $('.js-tab-content.active').removeClass('active');
     //    tab.addClass('active');
     // });
-});
+
 
 
 
